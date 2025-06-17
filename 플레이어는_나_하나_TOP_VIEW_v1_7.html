@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>플레이어는 나 하나 - 탑뷰 v1.7</title>
+  <style>
+    html, body { margin: 0; padding: 0; overflow: hidden; background: #111; }
+    canvas { background: #222; display: block; }
+    #joystick, #attackBtn, #skillBtn {
+      position: absolute;
+      z-index: 10;
+    }
+    #joystick {
+      bottom: 30px;
+      left: 30px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      touch-action: none;
+    }
+    #stick {
+      width: 60px;
+      height: 60px;
+      background: rgba(255,255,255,0.5);
+      border-radius: 50%;
+      position: absolute;
+      left: 45px;
+      top: 45px;
+    }
+    #attackBtn {
+      bottom: 60px;
+      right: 60px;
+      width: 110px;
+      height: 110px;
+      background: red;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 110px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      user-select: none;
+    }
+    #skillBtn {
+      top: 30px;
+      right: 60px;
+      width: 100px;
+      height: 50px;
+      background: purple;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 50px;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="gameCanvas" width="800" height="600"></canvas>
+<div id="joystick"><div id="stick"></div></div>
+<div id="attackBtn">공격</div>
+<div id="skillBtn">그림자</div>
+
+<script>
+// ... script omitted for brevity; same as previous cell ...
+</script>
+
+</body>
+</html>

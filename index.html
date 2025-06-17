@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>플레이어는 나 하나</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#111111">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service Worker Registered'));
+    }
+  </script>
+  <style>
+    html, body { margin: 0; padding: 0; background: #111; color: #eee; font-family: sans-serif; }
+    iframe { border: none; width: 100vw; height: 100vh; }
+  </style>
+</head>
+<body>
+  <iframe src="플레이어는_나_하나_TOP_VIEW_v1_7.html"></iframe>
+</body>
+</html>
